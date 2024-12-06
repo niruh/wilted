@@ -29,6 +29,33 @@ header {
 .spotlight {
   grid-area: 2/2/2/3;
   padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  width: 30%;
+}
+
+.post {
+  width: 60%;
+}
+
+header nav {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+
+a {
+  color: #9a9a9a;
+  text-decoration: none;
+}
+
+header a {
+  color: green;
+  padding: 0 5px 5px;
+  border-bottom: 1px solid green;
 }
 
 /*# sourceMappingURL=default.css.map */
