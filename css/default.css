@@ -26,7 +26,7 @@ body {
 }
 
 .dim {
-  grid-area: 2/1/4/4;
+  grid-area: 1/1/4/4;
   background: rgba(255, 255, 255, 0.25);
 }
 
