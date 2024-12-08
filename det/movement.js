@@ -1,4 +1,7 @@
-// smooth scroll
-// function smooth() {
-//  document.getElementById("jump_to_location").scrollIntoView({behavior: 'smooth'});
-//}
+const button = document.getElementById("move-two");
+const sectionTwo = document.getElementById("two");
+
+button.addEventListener("click", () => {
+  sectionTwo.scrollIntoView({ behavior: "instant", block: "end" });
+});
+
