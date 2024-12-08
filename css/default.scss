@@ -4,6 +4,7 @@ $display-title: LibertinusKeyboard-Regular;
 
 body {
   font-family: $text;
+  font-size: 10pt;
   margin: 0;
   background: url(file:///Users/e/Documents/wilted/det/hills.jpg);
   background-size: cover;
@@ -16,8 +17,15 @@ body {
   display: grid;
   width: 100vw;
   height: 100vh;
-  grid-template-rows: 0.25fr 1fr 0.2fr;
+  grid-template-rows: 0.25fr 1fr 0.25fr;
   grid-template-columns: 0.25fr 1fr 0.25fr;
+}
+.name {
+  grid-area: 3 / 3 / auto / auto;
+  font-size: 8em;
+  opacity: .5;
+  color: rgba(255,255,255,0);
+  text-shadow: -5px -5px green, 2px 2px gray;
 }
 .dim {
   grid-area: 2 / 1 / 4 / 4;
@@ -25,7 +33,9 @@ body {
 }
 header {
   grid-area: 1 / 1 / 1 / 4;
-  background: rgba(255,255,255,1);
+//  background: rgba(255,255,255,1);
+  display: grid;
+  grid-template-rows: auto auto;
 }
 .spotlight {
   grid-area: 2 / 2 / 2 / 3;
@@ -40,9 +50,9 @@ header {
   width: 60%;
 }
 header nav {
-  margin: 0 auto;
-  width: 70%;
   text-align: center;
+  align-self: bottom;
+  grid-area: 2 / 1 / 3 / auto;
 }
 a {
   color: #9a9a9a;
