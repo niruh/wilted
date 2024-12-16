@@ -9,7 +9,7 @@ body {
   background: url(file:///Users/e/Documents/wilted/det/hills.jpg);
   background-size: cover;
   // background-position: 40% 10%;
-  background-position: 40% 110%;
+  background-position: 40% 50%;
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
@@ -17,7 +17,7 @@ body {
   display: grid;
   width: 100vw;
   height: 100vh;
-  grid-template-rows: 0.25fr 1fr 0.25fr;
+  grid-template-rows: auto 1fr 0.25fr;
   grid-template-columns: 0.25fr 1fr 0.25fr;
 }
 .name {
@@ -30,4 +30,36 @@ body {
 .dim {
   grid-area: 1 / 1 / 4 / 4;
   background: rgba(255,255,255,0.25);
+}
+nav {
+  grid-area: 1 / 1 / 2 / 4;
+  background: #000;
+}
+
+/*----------------------------------
+ * 
+ *
+ * styling details
+ *
+ *
+ * --------------------------------*/
+
+a {
+  text-decoration: none;
+}
+nav h1 {
+  background: #fff;
+  display: inline-block;
+  margin: 0;
+  padding: 25px;
+}
+nav a {
+  display: inline-block;
+  padding: 0 25px;
+  color: #fff;
+  height: 100%;
+}
+nav a:hover {
+  color: #000;
+  background: #fff;
 }
