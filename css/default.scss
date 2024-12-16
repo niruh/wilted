@@ -25,9 +25,9 @@ body {
 .content {
   display: grid;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   grid-template-rows: auto 1fr 0.25fr;
-  grid-template-columns: 0.25fr 1fr 0.25fr;
+  grid-template-columns: 0.25fr 0.5fr 0.5fr 0.25fr;
 }
 .name {
   grid-area: 3 / 3 / auto / auto;
@@ -37,14 +37,25 @@ body {
   text-shadow: -5px -5px green, 2px 2px gray;
 }
 .dim {
-  grid-area: 1 / 1 / 4 / 4;
+  grid-area: 1 / 1 / 5 / 5;
   background: rgba(255,255,255,0.25);
 }
 nav {
-  grid-area: 1 / 1 / 2 / 4;
-  background: rgba(1,1,1,.5);
+  grid-area: 1 / 1 / 2 / 5;
+  background: rgba(1,1,1,.75);
 }
-
+.side {
+  grid-area: 2 / 2 / auto / auto;
+  margin-top: 50px;
+  background: #fff;
+  padding: 50px;
+}
+.post {
+  grid-area: 2 / 3 / 3 / auto;
+  background: #fff;
+  margin-top: 50px;
+  padding: 50px;
+}
 /*----------------------------------
  * 
  *
@@ -66,7 +77,6 @@ nav a {
   display: inline-block;
   padding: 0 25px;
   color: #fff;
-  height: 100%;
 }
 nav a:hover {
   color: #000;
