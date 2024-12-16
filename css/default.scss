@@ -8,8 +8,8 @@ body {
   margin: 0;
   background: url(file:///Users/e/Documents/wilted/det/hills.jpg);
   background-size: cover;
-  background-position: 40% 10%;
-  // background-position: 40% 70%;
+  // background-position: 40% 10%;
+  background-position: 40% 110%;
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
@@ -30,58 +30,4 @@ body {
 .dim {
   grid-area: 1 / 1 / 4 / 4;
   background: rgba(255,255,255,0.25);
-}
-header {
-  grid-area: 1 / 1 / 1 / 4;
-//  background: rgba(255,255,255,1);
-  display: grid;
-  grid-template-rows: auto auto;
-}
-.spotlight {
-  grid-area: 2 / 2 / auto / 3;
-//  display: flex;
-//  flex-wrap: wrap;
-//  gap: 50px;
-  align-items: top;
-}
-.side {
-//  width: 30%;
-  padding: 20px;
-}
-.post {
-//  width: 60%;
-}
-header nav {
-  text-align: center;
-  align-self: bottom;
-  grid-area: 2 / 1 / 3 / auto;
-}
-a {
-  color: #9a9a9a;
-  text-decoration: none;
-  display: inline-block;
-  margin-right: 10px;
-}
-header a {
-  color: green;
-  padding: 0 5px 5px;
-  border-bottom: 1px solid green;
-}
-header h1 {
- // margin: 0;
-  text-transform: uppercase;
-  font-size: 3em;
-  text-align: center;
-}
-.potoates {
-  margin-top: 100vh;
-}
-.potatoes .dim {
-    background: #fafafa;
-}
-nav > button {
-  border-radius: 0;
-  background: none;
-  box-shadow: none;
-  border: none;
 }
