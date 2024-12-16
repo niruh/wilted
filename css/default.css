@@ -9,6 +9,13 @@ body {
   background-attachment: scroll;
 }
 
+/*----------------------------------
+ * 
+ *
+ * grid structure
+ *
+ *
+ * --------------------------------*/
 .content {
   display: grid;
   width: 100vw;
@@ -32,7 +39,7 @@ body {
 
 nav {
   grid-area: 1/1/2/4;
-  background: #000;
+  background: rgba(1, 1, 1, 0.5);
 }
 
 /*----------------------------------
@@ -62,7 +69,6 @@ nav a {
 
 nav a:hover {
   color: #000;
-  background: #fff;
 }
 
 /*# sourceMappingURL=default.css.map */
