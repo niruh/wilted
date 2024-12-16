@@ -64,10 +64,9 @@ header a {
   border-bottom: 1px solid green;
 }
 
-.side h1 {
-  letter-spacing: 12px;
+header h1 {
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 3em;
   text-align: center;
 }
 
