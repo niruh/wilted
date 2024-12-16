@@ -26,8 +26,8 @@ body {
   display: grid;
   width: 100vw;
   min-height: 100vh;
-  grid-template-rows: auto 1fr 0.25fr;
-  grid-template-columns: 0.25fr 0.5fr 0.5fr 0.25fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 0.25fr 0.25fr 0.75fr 0.25fr;
 }
 .name {
   grid-area: 3 / 3 / auto / auto;
@@ -47,14 +47,22 @@ nav {
 .side {
   grid-area: 2 / 2 / auto / auto;
   margin-top: 50px;
-  background: #fff;
-  padding: 50px;
+  margin-right: 50px;
+}
+.sec {
+  background: rgba(255,255,255,1);
+  padding: 20px;
+  margin-bottom: 50px;
 }
 .post {
   grid-area: 2 / 3 / 3 / auto;
-  background: #fff;
   margin-top: 50px;
-  padding: 50px;
+}
+.footer {
+  grid-area: 3 / 1 / auto / 5;
+  background: rgba(255,255,255,1);
+  padding: 5px;
+  text-align: right;
 }
 /*----------------------------------
  * 
@@ -70,14 +78,17 @@ a {
 nav h1 {
   background: #fff;
   display: inline-block;
-  margin: 0;
   padding: 25px;
+  margin: 0;
 }
 nav a {
   display: inline-block;
-  padding: 0 25px;
   color: #fff;
+  padding: 25px;
 }
 nav a:hover {
   color: #000;
+}
+.side .sec {
+  text-align: right;
 }
